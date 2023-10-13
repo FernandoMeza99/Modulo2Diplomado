@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "f.elconfidencial.com-original-8ec-08c-85c-8ec08c85c866ccb70c4f1c36492d890f.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
