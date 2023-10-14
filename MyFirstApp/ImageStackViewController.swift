@@ -34,5 +34,9 @@ class ImageStackViewController: UIViewController {
         
     }
     
+    @IBAction func segueToShare(_ sender: UIBarButtonItem) {
+        let shareViewController = ShareViewController()
+        present(shareViewController, animated: true)
+    }
 
 }

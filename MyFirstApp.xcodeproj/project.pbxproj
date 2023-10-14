@@ -10,6 +10,7 @@
 		550F1FDE2AD9FBC000BF557D /* CaptionedImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550F1FDD2AD9FBC000BF557D /* CaptionedImage.xib */; };
 		550F1FE02AD9FE6700BF557D /* CaptionedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550F1FDF2AD9FE6700BF557D /* CaptionedImage.swift */; };
 		550F1FE42ADA1DD800BF557D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550F1FE32ADA1DD800BF557D /* MainViewController.xib */; };
+		550F1FE62ADA2EA800BF557D /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550F1FE52ADA2EA800BF557D /* ShareViewController.swift */; };
 		558CB5AE2ABE4B4E00E312EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558CB5AD2ABE4B4E00E312EA /* AppDelegate.swift */; };
 		558CB5B02ABE4B4E00E312EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558CB5AF2ABE4B4E00E312EA /* SceneDelegate.swift */; };
 		558CB5B22ABE4B4E00E312EA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558CB5B12ABE4B4E00E312EA /* MainViewController.swift */; };
@@ -44,6 +45,7 @@
 		550F1FDD2AD9FBC000BF557D /* CaptionedImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptionedImage.xib; sourceTree = "<group>"; };
 		550F1FDF2AD9FE6700BF557D /* CaptionedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionedImage.swift; sourceTree = "<group>"; };
 		550F1FE32ADA1DD800BF557D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		550F1FE52ADA2EA800BF557D /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		558CB5AA2ABE4B4E00E312EA /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		558CB5AD2ABE4B4E00E312EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		558CB5AF2ABE4B4E00E312EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		558CB5A12ABE4B4E00E312EA = {
 			isa = PBXGroup;
 			children = (
+				550F1FE52ADA2EA800BF557D /* ShareViewController.swift */,
 				558CB5AC2ABE4B4E00E312EA /* MyFirstApp */,
 				558CB5C32ABE4B5000E312EA /* MyFirstAppTests */,
 				558CB5CD2ABE4B5000E312EA /* MyFirstAppUITests */,
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550F1FE62ADA2EA800BF557D /* ShareViewController.swift in Sources */,
 				558CB5B22ABE4B4E00E312EA /* MainViewController.swift in Sources */,
 				55E11B412AC789290039217A /* ImageStackViewController.swift in Sources */,
 				550F1FE02AD9FE6700BF557D /* CaptionedImage.swift in Sources */,

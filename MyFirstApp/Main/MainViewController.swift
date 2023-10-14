@@ -22,27 +22,29 @@ class MainViewController: UIViewController {
     @IBAction func nextButtonTapped(_ sender: UIButton) {
         
         if sender.tag == 0 {
-            performSegue(withIdentifier: "SegueFromMainToPhotos", sender: nil)
+            segueToPhotos()
         } else {
-            performSegue(withIdentifier: "SegueFromMainToInfo", sender: nil)
+            segueToInfo()
         }
-       
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destinationViewController = segue.destination as? ImageStackViewController  {
-            destinationViewController.showCat = photoTypeSwitch.isOn
-            destinationViewController.title = titleTextField.text
-            
-            if switchOptionTitle.isOn {
-                destinationViewController.title = titleLabel.text
-            }
-        } else {
-            segue.destination.title = "info"
+    func segueToInfo(){
+        let infoViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InfoViewController")
+        infoViewController.title = "Info"
+        navigationController?.pushViewController(infoViewController, animated: true)
+        
+    }
+    
+    func segueToPhotos() {
+        guard let photosViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ImageStackViewController") as? ImageStackViewController else {
+            return
         }
-        
-        
+        photosViewController.showCat = photoTypeSwitch.isOn
+        if switchOptionTitle.isOn {
+            photosViewController.title = titleTextField.text
+        }
+        navigationController?.pushViewController(photosViewController, animated: true)
     }
     
     
@@ -74,20 +76,20 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("1")
+        
         // Do any additional setup after loading the view.
     }
     
     // va a aparecer la vista
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("2")
+       
     }
     
     //la vista ya aparecio
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("3")
+       
     }
     
     //metodos para cuando desaperece la pantalla del usuario
@@ -96,12 +98,12 @@ class MainViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        print("4")
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("5")
+     
     }
 }
 

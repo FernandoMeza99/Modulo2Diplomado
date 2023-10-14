@@ -60,7 +60,7 @@
                         <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="nextButtonTapped:" destination="-1" eventType="valueChanged" id="Hu5-2x-j3w"/>
+                        <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="ZMh-Vc-IhF"/>
                     </connections>
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGA-je-Zpe">
@@ -71,6 +71,9 @@
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="nOt-kO-t93"/>
+                    </connections>
                 </button>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZk-Vh-S3L">
                     <rect key="frame" x="172" y="235" width="51" height="31"/>
