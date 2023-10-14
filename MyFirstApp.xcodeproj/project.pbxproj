@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550F1FDE2AD9FBC000BF557D /* CaptionedImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550F1FDD2AD9FBC000BF557D /* CaptionedImage.xib */; };
+		550F1FE02AD9FE6700BF557D /* CaptionedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550F1FDF2AD9FE6700BF557D /* CaptionedImage.swift */; };
+		550F1FE42ADA1DD800BF557D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550F1FE32ADA1DD800BF557D /* MainViewController.xib */; };
 		558CB5AE2ABE4B4E00E312EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558CB5AD2ABE4B4E00E312EA /* AppDelegate.swift */; };
 		558CB5B02ABE4B4E00E312EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558CB5AF2ABE4B4E00E312EA /* SceneDelegate.swift */; };
-		558CB5B22ABE4B4E00E312EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558CB5B12ABE4B4E00E312EA /* ViewController.swift */; };
+		558CB5B22ABE4B4E00E312EA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558CB5B12ABE4B4E00E312EA /* MainViewController.swift */; };
 		558CB5B52ABE4B4E00E312EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558CB5B32ABE4B4E00E312EA /* Main.storyboard */; };
 		558CB5B72ABE4B4F00E312EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558CB5B62ABE4B4F00E312EA /* Assets.xcassets */; };
 		558CB5BA2ABE4B4F00E312EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558CB5B82ABE4B4F00E312EA /* LaunchScreen.storyboard */; };
@@ -38,10 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		550F1FDD2AD9FBC000BF557D /* CaptionedImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptionedImage.xib; sourceTree = "<group>"; };
+		550F1FDF2AD9FE6700BF557D /* CaptionedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionedImage.swift; sourceTree = "<group>"; };
+		550F1FE32ADA1DD800BF557D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		558CB5AA2ABE4B4E00E312EA /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		558CB5AD2ABE4B4E00E312EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		558CB5AF2ABE4B4E00E312EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		558CB5B12ABE4B4E00E312EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		558CB5B12ABE4B4E00E312EA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		558CB5B42ABE4B4E00E312EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		558CB5B62ABE4B4F00E312EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		558CB5B92ABE4B4F00E312EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550F1FE12AD9FE9900BF557D /* CaptionedImage */ = {
+			isa = PBXGroup;
+			children = (
+				550F1FDD2AD9FBC000BF557D /* CaptionedImage.xib */,
+				550F1FDF2AD9FE6700BF557D /* CaptionedImage.swift */,
+			);
+			path = CaptionedImage;
+			sourceTree = "<group>";
+		};
+		550F1FE22ADA1D9800BF557D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				558CB5B12ABE4B4E00E312EA /* MainViewController.swift */,
+				550F1FE32ADA1DD800BF557D /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		558CB5A12ABE4B4E00E312EA = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +127,16 @@
 		558CB5AC2ABE4B4E00E312EA /* MyFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				550F1FE22ADA1D9800BF557D /* Main */,
 				558CB5AD2ABE4B4E00E312EA /* AppDelegate.swift */,
 				558CB5AF2ABE4B4E00E312EA /* SceneDelegate.swift */,
-				558CB5B12ABE4B4E00E312EA /* ViewController.swift */,
 				558CB5B32ABE4B4E00E312EA /* Main.storyboard */,
 				558CB5B62ABE4B4F00E312EA /* Assets.xcassets */,
 				558CB5B82ABE4B4F00E312EA /* LaunchScreen.storyboard */,
 				558CB5BB2ABE4B4F00E312EA /* Info.plist */,
 				558CB5DD2ABE543300E312EA /* MySecondLaunchScreen.storyboard */,
 				55E11B402AC789290039217A /* ImageStackViewController.swift */,
+				550F1FE12AD9FE9900BF557D /* CaptionedImage */,
 			);
 			path = MyFirstApp;
 			sourceTree = "<group>";
@@ -238,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				558CB5BA2ABE4B4F00E312EA /* LaunchScreen.storyboard in Resources */,
+				550F1FE42ADA1DD800BF557D /* MainViewController.xib in Resources */,
 				558CB5B72ABE4B4F00E312EA /* Assets.xcassets in Resources */,
+				550F1FDE2AD9FBC000BF557D /* CaptionedImage.xib in Resources */,
 				558CB5B52ABE4B4E00E312EA /* Main.storyboard in Resources */,
 				558CB5DE2ABE543300E312EA /* MySecondLaunchScreen.storyboard in Resources */,
 			);
@@ -265,8 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				558CB5B22ABE4B4E00E312EA /* ViewController.swift in Sources */,
+				558CB5B22ABE4B4E00E312EA /* MainViewController.swift in Sources */,
 				55E11B412AC789290039217A /* ImageStackViewController.swift in Sources */,
+				550F1FE02AD9FE6700BF557D /* CaptionedImage.swift in Sources */,
 				558CB5AE2ABE4B4E00E312EA /* AppDelegate.swift in Sources */,
 				558CB5B02ABE4B4E00E312EA /* SceneDelegate.swift in Sources */,
 			);

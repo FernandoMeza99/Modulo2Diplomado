@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     @IBOutlet weak var photoTypeSwitch: UISwitch!
     @IBOutlet weak var nextButton: UIButton!
@@ -105,7 +105,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITextFieldDelegate{
+extension MainViewController: UITextFieldDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if string == "" { return true }
         if string.rangeOfCharacter(from: .alphanumerics) == nil && string != " " {
